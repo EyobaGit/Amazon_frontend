@@ -1,0 +1,32 @@
+.container{
+    background-color: #efeeee;
+    padding: 30px;
+}
+.orders__container{
+    background-color: #fff;
+    padding: 15px;
+}
+.orders__container h4 {
+    border-bottom: 2px solid var(--primary-shade);
+    padding: 20px;
+}
+.orders__container p {
+    padding: 12px;
+  }
+  
+  .orders__container img {
+    width: 150px !important;
+  }
+  .orders__container div {
+    height: auto !important;
+  }
+
+  .info {
+    padding: 20px;
+    background-color: #d1ecf1; /* light blue info color */
+    color: #0c5460; /* dark blue text */
+    border: 1px solid #bee5eb;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  

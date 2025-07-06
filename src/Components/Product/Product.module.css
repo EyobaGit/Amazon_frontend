@@ -1,0 +1,203 @@
+
+.card__container {
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px 10px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card__container h3{
+  font-size: 1rem;
+}
+
+.card__container:hover .button {
+  display: block;
+}
+
+.card__container img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.button {
+  display: none;
+  padding: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--primary-shade);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Products Grid */
+.products_container {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-width: 1450px;
+  gap: 20px;
+  justify-items: center;
+  margin: 70px auto;
+}
+
+/* FLEX STYLE: Used when 'flex' prop is passed */
+.product__flexed {
+  display: flex;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  height: 50vh;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.product__flexed h3 {
+  padding: 20px 0;
+}
+
+.product__flexed a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.product__flexed img {
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.product__flexed > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__flexed .button {
+  display: block;
+  position: static;
+  width: 150px;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 0;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.product__flexed .button:hover {
+  background-color: var(--primary-shade);
+}
+
+@media (max-width: 1024px) {
+  .product__flexed {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product__flexed a {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product__flexed img {
+    width: 80%;
+    height: auto;
+  }
+
+  .product__flexed > div {
+    width: 100%;
+  }
+
+  .product__flexed .button {
+    width: 70%;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card__container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .card__container h3 {
+    font-size: 0.95rem;
+  }
+
+  .card__container img {
+    height: 180px;
+  }
+
+  .products_container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .product__flexed {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__container {
+    padding: 10px;
+  }
+
+  .card__container h3 {
+    font-size: 0.9rem;
+  }
+
+  .card__container img {
+    height: 160px;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .product__flexed {
+    padding: 15px;
+  }
+
+  .product__flexed .button {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .products_container {
+    gap: 10px;
+  }
+}
