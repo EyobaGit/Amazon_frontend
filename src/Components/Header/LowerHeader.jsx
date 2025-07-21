@@ -26,21 +26,7 @@ const LowerHeader = () => {
           <Link to="#" className={styles.nav_item}>
             Sell
           </Link>
-          <Link to="#" className={styles.nav_item}>
-            Prime
-          </Link>
-          <Link to="#" className={styles.nav_item}>
-            New Releases
-          </Link>
-          <Link to="#" className={styles.nav_item}>
-            Electronics
-          </Link>
-          <Link to="#" className={styles.nav_item}>
-            Books
-          </Link>
-          <Link to="#" className={`${styles.nav_item} ${styles.promo_item}`}>
-            Another Simple Favor - Watch now
-          </Link>
+          
         </div>
       </div>
     </div>
